@@ -1,0 +1,24 @@
+{
+  "name": "my-godot-template",
+  "version": "1.0.0",
+  "description": "To get me started a bit faster",
+  "repository": "https://github.com/rmvermeulen/my-gopdot-template",
+  "author": "Rasmus Vermeulen <vermeulen.rasmus@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{,!(addons)/**/}*.gd": [
+      "gdformat --line-length 100",
+      "gdlint"
+    ]
+  }
+}
