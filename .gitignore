@@ -17,6 +17,6 @@ bin/
 *.dblite
 
 # editor
-.vscode/settings.json
+# .vscode/settings.json
 
 SimCityRoads/.vscode/settings.json
