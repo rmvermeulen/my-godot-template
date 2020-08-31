@@ -1,5 +1,7 @@
 extends Node2D
 
+export (bool) var save_results := false
+
 var results = []
 
 
@@ -38,7 +40,10 @@ func _ready():
 				at.atlas = texture
 				at.region = Rect2(attr.x, attr.y, attr.width, attr.height)
 				results.append(at)
-				assert(OK == ResourceSaver.save("res://resources/textures/%s.tres" % attr.name, at))
+				if save_results:
+					var path = "res://resources/textures/%s.tres" % attr.name
+					var saved = ResourceSaver.save(path, at)
+					assert(saved == OK)
 
 			_:
 				continue
