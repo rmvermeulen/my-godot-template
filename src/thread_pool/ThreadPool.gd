@@ -20,6 +20,7 @@ var __pool
 
 func _init():
 	__pool = __create_pool()
+	prints("ThreadPool ready")
 
 
 func _notification(what: int):
