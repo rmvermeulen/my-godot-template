@@ -75,6 +75,11 @@ _global_script_classes=[ {
 "path": "res://addons/godot-next/global/file_system_link.gd"
 }, {
 "base": "Reference",
+"class": "FutureThreadPool",
+"language": "GDScript",
+"path": "res://src/thread_pool/FutureThreadPool.gd"
+}, {
+"base": "Reference",
 "class": "GSAIAgentLocation",
 "language": "GDScript",
 "path": "res://src/SteeringAI/GSAIAgentLocation.gd"
@@ -284,6 +289,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/godot-next/global/singletons.gd"
 }, {
+"base": "Node",
+"class": "ThreadPool",
+"language": "GDScript",
+"path": "res://src/thread_pool/ThreadPool.gd"
+}, {
 "base": "Line2D",
 "class": "Trail2D",
 "language": "GDScript",
@@ -323,6 +333,7 @@ _global_script_class_icons={
 "EditorTools": "",
 "FileSearch": "",
 "FileSystemLink": "",
+"FutureThreadPool": "",
 "GSAIAgentLocation": "",
 "GSAIArrive": "",
 "GSAIAvoidCollisions": "",
@@ -365,6 +376,7 @@ _global_script_class_icons={
 "ResourceCollection": "",
 "ResourceSet": "",
 "Singletons": "",
+"ThreadPool": "",
 "Trail2D": "res://addons/godot-next/icons/icon_trail_2d.svg",
 "Trail3D": "res://addons/godot-next/icons/icon_trail_3d.svg",
 "TweenSequence": "",
@@ -376,3 +388,8 @@ _global_script_class_icons={
 
 config/name="My Godot Project Template"
 config/description="include AI, some assets, basic game impl, husky/lint-staged/gdtoolkit setup"
+run/main_scene="res://maps/TestMap.tscn"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "godot-next" )
