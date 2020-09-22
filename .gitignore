@@ -20,3 +20,4 @@ bin/
 # .vscode/settings.json
 
 SimCityRoads/.vscode/settings.json
+*.log
